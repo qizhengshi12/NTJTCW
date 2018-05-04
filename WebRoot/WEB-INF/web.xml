@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+        <filter-name>Set Character Encoding</filter-name>
+        <filter-class>com.database.Utils.SetCharacterEncodingFilter</filter-class>
+        <init-param> 
+            <param-name>encoding</param-name>
+            <param-value>GB2312</param-value>
+        </init-param> 
+    </filter> 
+    <filter-mapping>
+        <filter-name>Set Character Encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+ 
+	<!-- 系统登陆的servlet配置信息 -->
+	<servlet>
+		<servlet-name>CheckLoginServlet</servlet-name>
+		<servlet-class>com.safety.servlet.CheckLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckLoginServlet</servlet-name>
+		<url-pattern>/CheckLoginServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 权限分配的servlet配置信息 -->
+	<servlet>
+		<servlet-name>PermissionsServlet</servlet-name>
+		<servlet-class>com.safety.servlet.PermissionsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PermissionsServlet</servlet-name>
+		<url-pattern>/PermissionsServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 基本信息的servlet配置信息 -->
+	<servlet>
+		<servlet-name>ZzxxServlet</servlet-name>
+		<servlet-class>com.safety.servlet.ZzxxServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ZzxxServlet</servlet-name>
+		<url-pattern>/ZzxxServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 法律的servlet配置信息 -->
+	<servlet>
+		<servlet-name>FlServlet</servlet-name>
+		<servlet-class>com.safety.servlet.FlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FlServlet</servlet-name>
+		<url-pattern>/FlServlet</url-pattern>
+	</servlet-mapping>
+   
+	<!-- 法规的servlet配置信息 -->
+	<servlet>
+		<servlet-name>FgServlet</servlet-name>
+		<servlet-class>com.safety.servlet.FgServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FgServlet</servlet-name>
+		<url-pattern>/FgServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 规章的servlet配置信息 -->
+	<servlet>
+		<servlet-name>GzServlet</servlet-name>
+		<servlet-class>com.safety.servlet.GzServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GzServlet</servlet-name>
+		<url-pattern>/GzServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 规范性文件的servlet配置信息 -->
+	<servlet>
+		<servlet-name>GfxwjServlet</servlet-name>
+		<servlet-class>com.safety.servlet.GfxwjServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GfxwjServlet</servlet-name>
+		<url-pattern>/GfxwjServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 管理制度的servlet配置信息 -->
+	<servlet>
+		<servlet-name>GlzdServlet</servlet-name>
+		<servlet-class>com.safety.servlet.GlzdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GlzdServlet</servlet-name>
+		<url-pattern>/GlzdServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 文件管理的servlet配置信息 -->
+	<servlet>
+		<servlet-name>WjglServlet</servlet-name>
+		<servlet-class>com.safety.servlet.WjglServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WjglServlet</servlet-name>
+		<url-pattern>/WjglServlet</url-pattern>
+	</servlet-mapping>
+   
+	<!-- 工作通知的servlet配置信息 -->
+	<servlet>
+		<servlet-name>GztzServlet</servlet-name>
+		<servlet-class>com.safety.servlet.GztzServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GztzServlet</servlet-name>
+		<url-pattern>/GztzServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 工作计划的servlet配置信息 -->
+	<servlet>
+		<servlet-name>JhzjServlet</servlet-name>
+		<servlet-class>com.safety.servlet.JhzjServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JhzjServlet</servlet-name>
+		<url-pattern>/JhzjServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 工作动态的servlet配置信息 -->
+	<servlet>
+		<servlet-name>GzdtServlet</servlet-name>
+		<servlet-class>com.safety.servlet.GzdtServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GzdtServlet</servlet-name>
+		<url-pattern>/GzdtServlet</url-pattern>
+	</servlet-mapping>
+   
+	<!-- 报表上报——财务报表的servlet配置信息 -->
+	<servlet>
+		<servlet-name>BbsbCwbbServlet</servlet-name>
+		<servlet-class>com.safety.servlet.BbsbCwbbServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BbsbCwbbServlet</servlet-name>
+		<url-pattern>/BbsbCwbbServlet</url-pattern>
+	</servlet-mapping>
+   
+	<!-- 报表上报——审计报表的servlet配置信息 -->
+	<servlet>
+		<servlet-name>BbsbSjbbServlet</servlet-name>
+		<servlet-class>com.safety.servlet.BbsbSjbbServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BbsbSjbbServlet</servlet-name>
+		<url-pattern>/BbsbSjbbServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 报表上报——统计报表的servlet配置信息 -->
+	<servlet>
+		<servlet-name>BbsbTjbbServlet</servlet-name>
+		<servlet-class>com.safety.servlet.BbsbTjbbServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BbsbTjbbServlet</servlet-name>
+		<url-pattern>/BbsbTjbbServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 报表上报——后台报表管理的servlet配置信息 -->
+	<servlet>
+		<servlet-name>HtbbServlet</servlet-name>
+		<servlet-class>com.safety.servlet.HtbbServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HtbbServlet</servlet-name>
+		<url-pattern>/HtbbServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 报表上报——报表定制的servlet配置信息 -->
+	<servlet>
+		<servlet-name>BbdzServlet</servlet-name>
+		<servlet-class>com.safety.servlet.BbdzServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BbdzServlet</servlet-name>
+		<url-pattern>/BbdzServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 财审信息——重大项目申报的servlet配置信息 -->
+	<servlet>
+		<servlet-name>ZdxmsbServlet</servlet-name>
+		<servlet-class>com.safety.servlet.ZdxmsbServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ZdxmsbServlet</servlet-name>
+		<url-pattern>/ZdxmsbServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 财审信息——财务监督的servlet配置信息 -->
+	<servlet>
+		<servlet-name>CwjdServlet</servlet-name>
+		<servlet-class>com.safety.servlet.CwjdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CwjdServlet</servlet-name>
+		<url-pattern>/CwjdServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 财审信息——工资福利收入的servlet配置信息 -->
+	<servlet>
+		<servlet-name>GzflsrServlet</servlet-name>
+		<servlet-class>com.safety.servlet.GzflsrServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GzflsrServlet</servlet-name>
+		<url-pattern>/GzflsrServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 历年年鉴的servlet配置信息 -->
+	<servlet>
+		<servlet-name>LnnjServlet</servlet-name>
+		<servlet-class>com.safety.servlet.LnnjServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LnnjServlet</servlet-name>
+		<url-pattern>/LnnjServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 学习园地的servlet配置信息 -->
+	<servlet>
+		<servlet-name>LearningCornerServlet</servlet-name>
+		<servlet-class>com.safety.servlet.LearningCornerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LearningCornerServlet</servlet-name>
+		<url-pattern>/LearningCornerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 信息发布的servlet配置信息 -->
+	<servlet>
+		<servlet-name>PostInformationServlet</servlet-name>
+		<servlet-class>com.safety.servlet.PostInformationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostInformationServlet</servlet-name>
+		<url-pattern>/PostInformationServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 短信平台的servlet配置信息 -->
+	<servlet>
+		<servlet-name>MessageServlet</servlet-name>
+		<servlet-class>com.safety.servlet.MessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MessageServlet</servlet-name>
+		<url-pattern>/MessageServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 邮件系统的servlet配置信息 -->
+	<servlet>
+		<servlet-name>EmailServlet</servlet-name>
+		<servlet-class>com.safety.servlet.EmailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmailServlet</servlet-name>
+		<url-pattern>/EmailServlet</url-pattern>
+	</servlet-mapping>
+	<!-- ckfinder文件上传配置 start -->  
+	<servlet>  
+		<servlet-name>ConnectorServlet</servlet-name>  
+		<servlet-class>com.ckfinder.connector.ConnectorServlet</servlet-class>
+		<init-param>
+			<param-name>configuration</param-name>
+			<param-value>mypackage.CKFinderConfiguration</param-value>
+		</init-param>
+		<init-param>  
+             <param-name>XMLConfig</param-name>
+             <param-value>/WEB-INF/config.xml</param-value>  
+         </init-param>  
+         <init-param>  
+             <param-name>debug</param-name>  
+             <param-value>false</param-value>  
+         </init-param>  
+         <load-on-startup>1</load-on-startup>  
+     </servlet>  
+     <servlet-mapping>  
+         <servlet-name>ConnectorServlet</servlet-name>  
+         <url-pattern>  
+             /ckfinder/core/connector/java/connector.java  
+         </url-pattern>  
+     </servlet-mapping>  
+     <filter>  
+         <filter-name>FileUploadFilter</filter-name>  
+         <filter-class>com.ckfinder.connector.FileUploadFilter</filter-class>  
+         <init-param>  
+             <param-name>sessionCookieName</param-name>  
+             <param-value>JSESSIONID</param-value>  
+         </init-param>  
+         <init-param>  
+             <param-name>sessionParameterName</param-name>  
+             <param-value>jsessionid</param-value>  
+         </init-param>  
+     </filter>  
+     <filter-mapping>  
+         <filter-name>FileUploadFilter</filter-name>  
+         <url-pattern>  
+             /ckfinder/core/connector/java/connector.java  
+          </url-pattern>  
+     </filter-mapping>  
+	<!-- ckfinder文件上传配置 end -->
+	
+	<!-- 定时器 -->
+	<servlet>
+        <servlet-name>TimeTaskServlet</servlet-name>
+        <servlet-class>com.safety.servlet.TimeTaskServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+        <servlet-name>TimeTaskServlet</servlet-name>
+        <url-pattern>/TimeTaskServlet</url-pattern>
+	</servlet-mapping>
+    <listener>
+		<listener-class>com.safety.servlet.TimeTaskServlet</listener-class>
+	</listener>
+	
+	
+	<!-- 上传文件的servlet配置信息 -->
+	<servlet>
+		<servlet-name>HandleFileServlet</servlet-name>
+		<servlet-class>com.safety.servlet.HandleFileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HandleFileServlet</servlet-name>
+		<url-pattern>/HandleFileServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- session时效 -->
+	<session-config> 
+		<session-timeout>120</session-timeout>
+	</session-config>
+	<!-- 监听session -->
+	
+	<listener> 
+    	<listener-class>com.safety.servlet.MySessionServlet</listener-class> 
+	</listener> 
+</web-app>

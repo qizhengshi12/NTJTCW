@@ -1,0 +1,108 @@
+/*页面背景*/
+body
+{
+    font-family: 宋体;
+    font-size: 15px;
+    background-color: #EDEDED;
+}
+
+/*按钮背景样式*/
+.button1
+{
+	color: #d9eef7;
+	cursor: pointer;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+
+/*DIV样式*/
+.menuDiv{
+	position: absolute;
+	visibility: hidden;
+	overflow: hidden;
+	border:0px;
+	background-color:#F9F9F9;
+	padding:5px;
+	background-image: url('images/div.jpg');
+	margin-top: -220px;
+}
+/*链接样式*/
+A:LINK, A:VISITED, A:ACTIVE, A:HOVER
+{
+	TEXT-DECORATION: NONE;
+}
+/*字体样式*/
+.STYLE1
+{
+	font-size: 15px;
+	height: 25px;
+}
+
+/*字体样式*/
+.STYLE2
+{
+	font-weight: bold;
+	font-size: 16px;
+	height: 30px;
+}
+
+/*字体样式*/
+.STYLE3
+{
+	font-size: 13px;
+	height: 25px;
+	background-color: #E0FFFF;
+}
+/*字体样式*/
+.STYLE4
+{
+	font-size: 15px;
+	height: 25px;
+	background-color: #FFFACD;
+}
+/*字体样式*/
+.STYLE5
+{
+	font-size: 15px;
+	height: 20px;
+}
+/*字体样式*/
+.STYLE6
+{
+	font-size: 15px;
+	height: 20px;
+	background-color: #A9A9A9;
+}
+/*列表行背景——行头*/
+.tr1
+{
+	font-size: 15px;
+	background-color: #B2DFEE;
+}
+/*列表行背景——其他行*/
+.tr2
+{
+	font-size: 15px;
+	background-color: #E0FFFF;
+}
+/*标题样式*/
+.BT
+{
+	font-size: 15px;
+	height: 25px;
+	color: black;
+}
+/*列表行背景——新增编辑用户*/
+.tr3
+{
+	background-color: #FFFFE0;
+}
+/*左侧菜单样式*/
+.leftmenu
+{
+	size: 15px;
+	font-size: 15px;
+}

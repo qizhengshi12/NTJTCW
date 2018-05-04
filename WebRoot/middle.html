@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<style> 
+.navPoint { 
+COLOR: white; CURSOR: hand; FONT-FAMILY: Webdings; FONT-SIZE: 9pt 
+} 
+</style> 
+<script>
+/*
+function switchSysBar(){ 
+var locate=location.href.replace('middel.html','');
+var ssrc=document.all("img1").src.replace(locate,'');
+if (ssrc=="images/main_55.gif")
+{ 
+document.all("img1").src="images/main_55_1.gif";
+document.all("frmTitle").style.display="none" 
+} 
+else
+{ 
+document.all("img1").src="images/main_55.gif";
+document.all("frmTitle").style.display="" 
+}
+} */
+function switchSysBar() {
+  if(document.all("frmTitle").style.display == "") {
+    document.all("img1").src = "images/main_55_1.gif";
+    document.all("frmTitle").style.display = "none";
+  } else {
+    document.all("img1").src = "images/main_55.gif";
+    document.all("frmTitle").style.display = "";
+  }
+}
+function switchSysBar2() {
+  if(document.all("frmTitle2").style.display == "") {
+    document.all("img2").src = "images/main_55.gif";
+    document.all("frmTitle2").style.display = "none";
+  } else {
+    document.all("img2").src = "images/main_55_1.gif";
+    document.all("frmTitle2").style.display = "";
+  }
+}
+</script>
+
+</head>
+
+<body style="overflow:hidden">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+  <tr>
+    <td width="201" id=frmTitle nowrap="nowrap"  align="center" valign="top" style="display:'';">
+	    <table width="201" height="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+	      <tr>
+	        <td width="201"><iframe name="I1" height="100%" width="201" src="menu.html"  frameborder="0" scrolling="no"> 浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe></td>
+	      </tr>
+	    </table>
+	</td>
+    <td width="6px" valign="middle" bgcolor="#EDEDED" onclick="switchSysBar()">
+    	<SPAN class=navPoint id=switchPoint title=关闭/打开左栏>
+    		<img src="images/main_55.gif" name="img1" width=6 height=40 id=img1>
+    	</SPAN>
+    </td>
+    <td align="center" valign="top">
+    	<iframe name="I2" width="100%" height="100%" frameborder="0" src="desk.jsp"> 浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

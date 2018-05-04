@@ -1,0 +1,481 @@
+<style type="text/css">
+	body {
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	}
+	.STYLE1 {
+		font-size: 13px;
+		color: #FFFFFF;
+	}
+	.MenuStyle1 {
+		font-size: 15px;
+		font-family: 'Microsoft YaHei';
+	}
+	a{TEXT-DECORATION:none;color:#000000;}
+	a:hover{TEXT-DECORATION:underline;color: #A020F0;}
+	img {border:0px;}
+	
+</style>
+
+<div style= "overflow:auto;overflow-x:hidden;height:100%;width: 100%;background-image: url('images/menu1.png')" >
+<table width="201" height="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="top">
+		<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu1" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(1)" style="cursor:hand;">
+		            	&nbsp;&nbsp;<img align="middle" src="images/menu/m1.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">财经法规</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu1"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='FlServlet?action=getFl' target='I2'>法律</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='FgServlet?action=getFg' target='I2'>法规</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='GzServlet?action=getGz' target='I2'>规章</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='GfxwjServlet?action=getGfxwj' target='I2'>规范性文件</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		    
+		    
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu2" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(2)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m2.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">管理制度</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu2"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='GlzdServlet?action=getGlzd' target='I2'>单位制度</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			
+			
+		    <tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu3" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(3)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m3.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">组织体系</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu3"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='ZzxxServlet?action=getCompany' target='I2'>组织体系</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		
+		 	
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu4" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(4)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m4.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">财审统计文件</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu4"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='WjglServlet?action=getWjglList&flag=1' target='I2'>文件管理</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='GztzServlet?action=getGztzXFList' target='I2'>会议通知</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='JhzjServlet?action=getJhzj' target='I2'>计划总结</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='GzdtServlet?action=getGzdt' target='I2'>工作动态</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			
+			
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu5" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(5)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m5.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">报表上报</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu5"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='BbsbCwbbServlet?action=getCwbb' target='I2'>财务报表</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='BbsbSjbbServlet?action=getSjbb' target='I2'>审计报表</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='BbsbTjbbServlet?action=getTjbb' target='I2'>统计报表</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='HtbbServlet?action=getHtbb' target='I2'>后台报表管理</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='BbdzServlet?action=getBbdzmb&cxlx=cwbb' target='I2'>报表定制</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		 	
+		 	
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu6" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(6)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m6.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">财审信息</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu6"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='ZdxmsbServlet?action=getZdxmsb' target='I2'>重大项目申报</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='BbsbCwbbServlet?action=getCwbbSgjfb' target='I2'>三公经费使用情况</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='GzflsrServlet?action=getGzflsr' target='I2'>工资福利</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='CwjdServlet?action=getCwjd' target='I2'>财务监督</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		 	
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu13" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(13)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m13.png" width="40px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">统计分析</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu13"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='CwjdServlet?action=getJjyxfx' target='I2'>交通经济运行分析</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			
+		 	
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu7" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(7)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m7.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">统计资料</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu7"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='LnnjServlet?action=getNjfb' target='I2'>历年年鉴发布</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='LnnjServlet?action=getNjgl' target='I2'>历年年鉴管理</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu9" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(9)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m9.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">学习园地</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu9"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='LearningCornerServlet?action=getCornerList&flag=1' target='I2'>学习园地</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu8" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(8)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m8.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">信息交流</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu8"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='MessageServlet?action=newMessage' target='I2'>短信发送</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='EmailServlet?action=MyEmail&flag=1' target='I2'>电子邮件</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu10" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(10)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m10.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">信息发布</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu10"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='PostInformationServlet?action=getInformationList&srbt=' target='I2'>首页窗口</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='PostInformationServlet?action=getTopScroll' target='I2'>滚动字幕</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			
+			
+			<tr>
+		    	<td>
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu11" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(11)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m11.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">权限管理</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu11"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='ZzxxServlet?action=getMyAccount' target='I2'>我的账户</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='PermissionsServlet?action=getPermissions' target='I2'>权限设置</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='PermissionsServlet?action=getCheckID' target='I2'>审核人设置</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		    
+			
+			<tr>
+		    	<td>
+		    	
+		    	<table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+		            	<td height="42" background="images/menu1.png" id="imgmenu12" class="menu_title"   onmouseover="this.style.border='solid 1px #A9A9A9'" onmouseout="this.style.border='solid 0px'" onClick="showsubmenu(12)" style="cursor:hand">
+						&nbsp;&nbsp;<img align="middle" src="images/menu/m12.png" width="42px" height="42px"/><font style="font-family: 'Microsoft YaHei'; color: white;font-weight: 100px;font-size: 16px;">关于系统</font>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ffffff" id="submenu12"  style="DISPLAY: none" >
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a href='about.jsp' target='I2'>系统帮助</a>
+									</td>
+								</tr>
+								<tr style="cursor:hand" onmouseover="this.style.backgroundColor='#D4D4D4';" onmouseOut="this.style.backgroundColor='';">
+									<td width="56" height="25">&nbsp;</td>
+									<td class="MenuStyle1">
+										<a  href='logout.jsp' target='I2' onclick="javascript:return confirm('确认退出系统吗？');">退出系统</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</div>
+<script>
+
+function showsubmenu(sid)
+{
+whichEl = eval("submenu" + sid);
+imgmenu = eval("imgmenu" + sid);
+if (whichEl.style.display == "none")
+{
+eval("submenu" + sid + ".style.display=\"\";");
+imgmenu.background="images/menu2.png";
+}
+else
+{
+eval("submenu" + sid + ".style.display=\"none\";");
+imgmenu.background="images/menu1.png";
+}
+}
+</script>
